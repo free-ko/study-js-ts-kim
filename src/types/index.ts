@@ -3,7 +3,7 @@ import { NewsFeedView } from "../page";
 
 export interface NewsStore {
   getAllFeeds: () => NewsFeed[];
-  getFeed: (position: number) => NewsFeedView;
+  getFeed: (position: number) => NewsFeed;
   setFeeds: (feeds: NewsFeed[]) => void;
   makeRead: (id: number) => void;
   hasFeeds: boolean;
