@@ -1,5 +1,4 @@
 import View from "../core/view";
-import { NewsFeedView } from "../page";
 
 export interface NewsStore {
   getAllFeeds: () => NewsFeed[];
@@ -10,7 +9,7 @@ export interface NewsStore {
   currentPage: number;
   numberOfFeed: number;
   nextPage: number;
-  prePage: number;
+  prevPage: number;
 }
 
 export interface News {
@@ -38,7 +37,7 @@ export interface NewsComment extends News {
 }
 
 export interface RouteInfo {
-  paht: string;
+  path: string;
   page: View;
   params: RegExp | null;
 }

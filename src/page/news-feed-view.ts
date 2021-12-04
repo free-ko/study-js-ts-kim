@@ -77,7 +77,7 @@ export default class NewsFeedView extends View {
     }
 
     this.setTemplateData("news_feed", this.getHtml());
-    this.setTemplateData("prev_page", String(this.store.prePage));
+    this.setTemplateData("prev_page", String(this.store.prevPage));
     this.setTemplateData("next_page", String(this.store.nextPage));
 
     this.updateView();
